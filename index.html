@@ -6,45 +6,48 @@
         <link rel="stylesheet" href="css/960gs.css" />
         <link rel="stylesheet" href="css/default.css" />
         <link rel="shortcut icon" href="favicon.ico" />
+		<meta keyword="Open Source Access Control Middleware" />
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     </head>
 <body>
 <div class="page container_12">
 
+	<!--
     <div id="header" class="container_12 clearfix">
         <div class="grid_4 logo">
             <img src="images/logo.jpg" align="right"/>
         </div>
-        <div class="grid_8 banner">
-            <span class="sub_title">> Open Source Access Control Middleware</span>
+		<div class="grid_8 banner">
             <span class="point">Security</span>
             <span class="point">Efficiency</span>
             <span class="point">Innovation</span>
         </div>
     </div>
+	-->
 
     <div id="content"  class="container_12 clearfix">
-        <div class="grid_3">
+        <div class="block-tl">
             <div class="head">Assign Personnel</div>
             <div class="body">
                 <a href="user/userMng">Assign roles to user</a>
             </div>
         </div>
-        <div class="grid_3">
+        <div class="block-tr">
             <div class="head">Role Builder</div>
             <div class="body">
                 <a href="privilege/roleMng">Role</a>
             </div>
         </div>
-        <div class="grid_3">
+        <div class="block-bl">
             <div class="head">Infrastructure Builder</div>
             <div class="body">
                 <a href="privilege/privilegeMng">Privilege</a>
             </div>
         </div>
-        <div class="grid_3">
+        <div class="block-br">
             <div class="head">Policy Developer</div>
             <div class="body">
                 <a href="userCategory/userCategoryMng">User category</a>
@@ -52,12 +55,40 @@
                 <a href="query/queryMng">Query</a>
             </div>
         </div>
+		<div class="banner">
+            <span class="point">Security</span>
+            <span class="point">Efficiency</span>
+            <span class="point">Innovation</span>
+        </div>
     </div>
 
     <div id="footer"  class="container_12 clearfix">
-    Copyright ©2004-2011 <a href="http://www.ralasafe.org">The Ralasafe Project</a> <a href="license.txt">License</a>
-
+		<a href="http://www.ralasafe.org">The Ralasafe Project</a><br/>
+		Copyright ©2004-2011 <a href="license.txt">License</a>
     </div>
 </div>
+<script>
+$(document).ready(function() {
+	var ps = $('.point').remove();
+	var i = 0;
+	function showPoint() {
+		var p = $(ps[i]);console.log(i);
+		i++;
+		if (i > 2) i = 0;
+		// p.css('opacity', 0);
+		$('.banner').append(p);
+		p.fadeIn(600, function() {
+			setTimeout(function() {
+				p.fadeOut(600, function() {
+					p.remove();
+					setTimeout(showPoint, 3 * 1000);
+				});
+			}, 15 * 1000);
+		});
+	}
+	
+	showPoint();
+});
+</script>
 </body>
 </html>
