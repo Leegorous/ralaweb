@@ -17,8 +17,8 @@ body {
 }
 
 #content {
-    height: 708px;
-    background: #FFF url(../images/content-bg.jpg) no-repeat center top;
+    height: 588px;
+    background: #FFF url(../images/content-bg.png) no-repeat center top;
     position: relative;
 }
 
@@ -38,7 +38,7 @@ body {
 
 #content .banner {
     position: absolute;
-	top: 340px;
+	top: 280px;
 	left: 380px;
 	width: 200px;
 	font-family: Calibri;
@@ -70,7 +70,7 @@ body {
 }
 .block-tl {
 	position: absolute;
-	top: 20px;
+	top: 30px;
 	left: 0;
 	width: 300px;
 	text-align: right;
@@ -78,7 +78,7 @@ body {
 
 .block-tr {
 	position: absolute;
-	top: 20px;
+	top: 30px;
 	right: 0;
 	width: 300px;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 #content .head {
-	font-family: Cambria Georgia Arial;
+	font-family: Cambria, Georgia, Arial;
 	font-size: 18px;
 	color: #b1b6ba;
 }
