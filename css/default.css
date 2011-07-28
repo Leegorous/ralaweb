@@ -205,7 +205,7 @@ body {
 
 #content .block-tr .body a:hover {
 	color: #84540a;
-	background: url(../images/item-bg.gif) no-repeat -230px 0px;
+	background: url(../images/item-bg.gif) no-repeat -226px 0px;
 }
 
 #content .block-bl .body a:hover {
@@ -215,7 +215,7 @@ body {
 
 #content .block-br .body a:hover {
 	color: #235a83;
-	background: url(../images/item-bg.gif) no-repeat -230px -34px;
+	background: url(../images/item-bg.gif) no-repeat -226px -34px;
 }
 
 #content .body a:hover {
