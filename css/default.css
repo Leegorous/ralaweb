@@ -17,19 +17,19 @@ body {
 }
 
 #content {
-    height: 588px;
+    height: 578px;
     background: #FFF url(../images/content-bg.png) no-repeat center top;
     position: relative;
 }
 
 #footer {
-	padding-top: 50px;
-	height: 80px;
+	padding-top: 35px;
+	height: 60px;
     background: url(../images/foot-bg.jpg) no-repeat;
     color: #838383;
     font-size: 12px;
     text-align: center;
-	line-height: 34px;
+	line-height: 24px;
 }
 
 #header .logo {
